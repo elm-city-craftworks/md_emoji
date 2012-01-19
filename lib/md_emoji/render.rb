@@ -1,8 +1,6 @@
 module MdEmoji
   class Render < Redcarpet::Render::HTML
     def normal_text(text)
-
-      # Check for emoji
       if include_emoji?(text)
         emoji(text)
       else
