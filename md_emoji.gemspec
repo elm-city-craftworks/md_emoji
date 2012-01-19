@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
   s.email       = ["jordan@ducksoupsoftware.com"]
   s.homepage    = "https://github.com/mendicant-university/md_emoji"
   s.summary     = "Markdown emoji for Rails"
-  s.description = "Rails plugin which adds emoji to markdown"
+  s.description = "Rails gem which adds emoji parsing to markdown"
 
   s.files = Dir["{app,config,db,lib,vendor}/**/*"] +
     %w{Rakefile README.markdown LICENSE}
