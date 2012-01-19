@@ -52,6 +52,10 @@ Contact Jordan through [GitHub (@jordanbyron)](https://github.com/jordanbyron) o
 9. Commit and push your changes.
 10. Submit a pull request.
 
+## Authorship
+
+Emoji images are from <emoji-cheat-sheet.com>'s [github project](https://github.com/arvida/emoji-cheat-sheet.com), was inspired by [Github's emoji implementation](https://github.com/blog/816-emoji), and hacked together by [Jordan Byron](http://jordanbyron.com).
+
 ## License
 
 Copyright (c) 2011 Jordan Byron
