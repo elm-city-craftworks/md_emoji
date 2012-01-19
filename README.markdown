@@ -6,9 +6,9 @@ Want to include [emoji](http://www.emoji-cheat-sheet.com/) in your rails app? We
 ![:smile:](https://github.com/mendicant-university/md_emoji/raw/master/vendor/assets/images/emojis/smile.png)
 ![:balloon:](https://github.com/mendicant-university/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
 
-This plugin requires `redcarpet` and `rails` >= 3.1 with the asset pipeline enabled.
+This gem requires `redcarpet` and `rails` >= 3.1 with the asset pipeline enabled.
 
-**Warning** This plugin is very new and under heavy development. Use at your own risk :)
+**Warning** This gem is very new and under heavy development. Use at your own risk :)
 
 ## Installation
 
