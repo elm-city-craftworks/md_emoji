@@ -54,7 +54,7 @@ Contact Jordan through [GitHub (@jordanbyron)](https://github.com/jordanbyron) o
 
 ## Authorship
 
-Emoji images are from [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com)'s [github project](https://github.com/arvida/emoji-cheat-sheet.com), was inspired by [Github's emoji implementation](https://github.com/blog/816-emoji), and hacked together by [Jordan Byron](http://jordanbyron.com).
+Emoji images are from [emoji-cheat-sheet.com](http://emoji-cheat-sheet.com)'s [github project](https://github.com/arvida/emoji-cheat-sheet.com). This project was inspired by [GitHub's emoji implementation](https://github.com/blog/816-emoji) and hacked together by [Jordan Byron](http://jordanbyron.com).
 
 ## License
 
