@@ -31,4 +31,16 @@ class MdEmojiTest < ActiveSupport::TestCase
 
     assert_equal %{<p>Hello :jordan_byron: world!</p>\n}, parsed_text
   end
+
+  test "works with autolink enabled" do
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render, :autolink => true)
+
+    text        = ":wink2: http://www.jordanbyron.com"
+    parsed_text = @markdown.render(text)
+
+    assert parsed_text.include?(%{<img src="/assets/emojis/wink2.png"}),
+           "Emoji not present in parsed text: #{parsed_text}"
+    assert parsed_text.include?(%{<a href="http://www.jordanbyron.com"}),
+           "Hyperlink not present in parsed text: #{parsed_text}"
+  end
 end
