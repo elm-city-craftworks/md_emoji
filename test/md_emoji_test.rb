@@ -22,6 +22,16 @@ class MdEmojiTest < ActiveSupport::TestCase
     assert_emoji 'plus1', parsed_text
   end
 
+  test "works on emoji with underscores" do
+    skip "known issue: https://github.com/mendicant-university/md_emoji/issues/3"
+
+    text = "This is tense :sweat_drops:"
+
+    parsed_text = @markdown.render(text)
+
+    assert_emoji 'sweat_drops', parsed_text
+  end
+
   test "skips emoji which aren't supported" do
     text = "Hello :jordan_byron: world!"
 
