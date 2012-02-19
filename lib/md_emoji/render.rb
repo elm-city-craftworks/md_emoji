@@ -47,7 +47,7 @@ module MdEmoji
     # Replaces emoji images with plain text
     def revert_emoji(text)
       text.gsub(/<[^>]+class="emoji"\stitle="(:\S+:)"[^>]+>/) do |emoji|
-        ":#{$1}:"
+        $1
       end
     end
   end
