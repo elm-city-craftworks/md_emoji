@@ -1,11 +1,19 @@
 module MdEmoji
   class Render < Redcarpet::Render::HTML
-    def normal_text(text)
-      if include_emoji?(text)
-        replace_emoji(text)
+    def preprocess(document)
+      if include_emoji?(document)
+        replace_emoji(document)
       else
-        text
+        document
       end
+    end
+
+    def block_code(text, lang)
+      "<pre><code#{%{ class="#{lang}"} if lang}>#{revert_emoji(text)}</code></pre>"
+    end
+
+    def codespan(text)
+      "<code>#{revert_emoji(text)}</code>"
     end
 
     # Replaces valid emoji characters, ie :smile:, with img tags
@@ -13,14 +21,18 @@ module MdEmoji
     # Valid emoji charaters are listed in +MdEmoji::EMOJI+
     def replace_emoji(text)
       text.gsub(/:(\S+):/) do |emoji|
-        if MdEmoji::EMOJI.include?($1)
-          file_name    = "#{$1.gsub('+', 'plus')}.png"
+
+        emoji_code = emoji #.gsub("|", "_")
+        emoji      = emoji_code.gsub(":", "")
+
+        if MdEmoji::EMOJI.include?(emoji)
+          file_name    = "#{emoji.gsub('+', 'plus')}.png"
           default_size = %{height="20" width="20"}
 
           %{<img src="/assets/emojis/#{file_name}" class="emoji" } +
-            %{title="#{emoji}" alt="#{emoji}" #{default_size}>}
+            %{title="#{emoji_code}" alt="#{emoji_code}" #{default_size}>}
         else
-          emoji
+          emoji_code
         end
       end
     end
@@ -30,6 +42,13 @@ module MdEmoji
     # Returns +true+ if emoji are present in +text+, otherwise returns +false+
     def include_emoji?(text)
       text && text[/:\S+:/]
+    end
+
+    # Replaces emoji images with plain text
+    def revert_emoji(text)
+      text.gsub(/<[^>]+class="emoji"\stitle="(:\S+:)"[^>]+>/) do |emoji|
+        ":#{$1}:"
+      end
     end
   end
 end

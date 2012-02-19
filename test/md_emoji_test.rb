@@ -3,7 +3,8 @@ require 'test_helper'
 class MdEmojiTest < ActiveSupport::TestCase
 
   def setup
-    @markdown = Redcarpet::Markdown.new(MdEmoji::Render)
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render,
+      :fenced_code_blocks  => true)
   end
 
   test "adds emoji to text when the emoji exists" do
@@ -23,8 +24,6 @@ class MdEmojiTest < ActiveSupport::TestCase
   end
 
   test "works on emoji with underscores" do
-    skip "known issue: https://github.com/mendicant-university/md_emoji/issues/3"
-
     text = "This is tense :sweat_drops:"
 
     parsed_text = @markdown.render(text)
@@ -41,8 +40,6 @@ class MdEmojiTest < ActiveSupport::TestCase
   end
 
   test "works with autolink enabled" do
-    skip "autolink messes everything up :("
-
     @markdown = Redcarpet::Markdown.new(MdEmoji::Render, :autolink => true)
 
     text        = ":wink2: http://www.jordanbyron.com"
@@ -54,13 +51,16 @@ class MdEmojiTest < ActiveSupport::TestCase
   end
 
   test "does not render emoji in codeblocks" do
-    text = %{Look at my codez
-      ```
-      def hello
-        :wink:
-      end
-      ```
-      Everything is ok :smile:}
+    text = %{```ruby
+def hello
+  :wink:
+end
+```
+Everything is ok :smile: `:wink2`
+
+```
+:fireengine:
+```}
 
     parsed_text = @markdown.render(text)
 
