@@ -31,6 +31,14 @@ class MdEmojiTest < ActiveSupport::TestCase
     assert_emoji 'sweat_drops', parsed_text
   end
 
+  test "works within list items" do
+    text = "- wow :smile:\n- amazing"
+
+    parsed_text = @markdown.render(text)
+
+    assert_emoji 'smile', parsed_text
+  end
+
   test "skips emoji which aren't supported" do
     text = "Hello :jordan_byron: world!"
 

@@ -1,19 +1,11 @@
 module MdEmoji
   class Render < Redcarpet::Render::HTML
-    def preprocess(document)
-      if include_emoji?(document)
-        replace_emoji(document)
-      else
-        document
-      end
+    def paragraph(text)
+      "<p>#{replace_emoji(text)}</p>\n"
     end
 
-    def block_code(text, lang)
-      "<pre><code#{%{ class="#{lang}"} if lang}>#{revert_emoji(text)}</code></pre>"
-    end
-
-    def codespan(text)
-      "<code>#{revert_emoji(text)}</code>"
+    def list_item(text, list_type)
+      "<li>#{replace_emoji(text)}</li>"
     end
 
     # Replaces valid emoji characters, ie :smile:, with img tags
@@ -42,13 +34,6 @@ module MdEmoji
     # Returns +true+ if emoji are present in +text+, otherwise returns +false+
     def include_emoji?(text)
       text && text[/:\S+:/]
-    end
-
-    # Replaces emoji images with plain text
-    def revert_emoji(text)
-      text.gsub(/<[^>]+class="emoji"\stitle="(:\S+:)"[^>]+>/) do |emoji|
-        $1
-      end
     end
   end
 end
