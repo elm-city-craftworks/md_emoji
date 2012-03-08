@@ -17,6 +17,6 @@ Gem::Specification.new do |s|
     %w{Rakefile README.markdown LICENSE}
   s.test_files = Dir["test/**/*"]
 
-  s.add_dependency "rails",     "~> 3.1.0"
-  s.add_dependency "redcarpet", "~> 2.1"
+  s.add_dependency "rails",     ">= 3.1.0"
+  s.add_dependency "redcarpet", ">= 2.0"
 end
