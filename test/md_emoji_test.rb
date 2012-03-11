@@ -58,6 +58,24 @@ class MdEmojiTest < ActiveSupport::TestCase
            "Hyperlink not present in parsed text: #{parsed_text}"
   end
 
+  test "works with no_styles enabled" do
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render, :no_styles => true)
+
+    text        = ":wink2:"
+    parsed_text = @markdown.render(text)
+
+    assert_emoji 'wink2', parsed_text
+  end
+
+  test "works with hard_wrap enabled" do
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render, :hard_wrap => true)
+
+    text        = ":wink2:"
+    parsed_text = @markdown.render(text)
+
+    assert_emoji 'wink2', parsed_text
+  end
+
   test "does not render emoji in codeblocks" do
     text = %{```ruby
 def hello
