@@ -59,21 +59,23 @@ class MdEmojiTest < ActiveSupport::TestCase
   end
 
   test "works with no_styles enabled" do
-    @markdown = Redcarpet::Markdown.new(MdEmoji::Render, :no_styles => true)
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render.new(:no_styles => true))
 
-    text        = ":wink2:"
+    text        = ":wink2: <a style='color: red;'></a>"
     parsed_text = @markdown.render(text)
 
     assert_emoji 'wink2', parsed_text
   end
 
   test "works with hard_wrap enabled" do
-    @markdown = Redcarpet::Markdown.new(MdEmoji::Render, :hard_wrap => true)
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render.new(:hard_wrap => true))
 
-    text        = ":wink2:"
+    text        = ":wink2:\nline"
     parsed_text = @markdown.render(text)
 
     assert_emoji 'wink2', parsed_text
+    assert parsed_text.include?(%{<br>}),
+           "<br> not present in parsed text: #{parsed_text}"
   end
 
   test "does not render emoji in codeblocks" do

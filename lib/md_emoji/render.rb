@@ -1,6 +1,13 @@
 module MdEmoji
   class Render < Redcarpet::Render::HTML
+    def initialize(options={})
+      @options = options
+      super options
+    end
+
     def paragraph(text)
+      text.gsub!("\n", "<br>\n") if @options[:hard_wrap]
+
       "<p>#{replace_emoji(text)}</p>\n"
     end
 
