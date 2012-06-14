@@ -6,6 +6,7 @@ require "rails/test_help"
 
 require 'redcarpet'
 
+Turn.config.natural = true
 Rails.backtrace_cleaner.remove_silencers!
 
 # Load support files
