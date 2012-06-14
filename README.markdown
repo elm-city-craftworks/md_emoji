@@ -8,7 +8,9 @@ Want to include [emoji](http://www.emoji-cheat-sheet.com/) in your rails app? We
 
 Markdown Emoji was designed to work with the [Redcarpet](https://github.com/tanoku/redcarpet) markdown processor and [Rails 3.1](https://github.com/rails/rails) with the asset pipeline enabled.
 
-**Warning** This gem is very new and under heavy development. Use at your own risk :)
+**Warning** This gem does some scary stuff under the hood, so please check out the code, test first, and don't hesitate to ask questions :)
+
+[![Build Status](https://secure.travis-ci.org/mendicant-university/md_emoji.png?branch=master)](http://travis-ci.org/mendicant-university/md_emoji)
 
 ## Installation
 
