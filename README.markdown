@@ -2,15 +2,15 @@
 
 Want to include [emoji](http://www.emoji-cheat-sheet.com/) in your rails app? Well now you can!
 
-![:balloon:](https://github.com/mendicant-university/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
-![:smile:](https://github.com/mendicant-university/md_emoji/raw/master/vendor/assets/images/emojis/smile.png)
-![:balloon:](https://github.com/mendicant-university/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
+![:balloon:](/mendicant-original/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
+![:smile:](/mendicant-original/md_emoji/raw/master/vendor/assets/images/emojis/smile.png)
+![:balloon:](/mendicant-original/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
 
 Markdown Emoji was designed to work with the [Redcarpet](https://github.com/tanoku/redcarpet) markdown processor and [Rails 3.1](https://github.com/rails/rails) with the asset pipeline enabled.
 
 **Warning** This gem does some scary stuff under the hood, so please check out the code, test first, and don't hesitate to ask questions :)
 
-[![Build Status](https://secure.travis-ci.org/mendicant-university/md_emoji.png?branch=master)](http://travis-ci.org/mendicant-university/md_emoji)
+[![Build Status](https://secure.travis-ci.org/mendicant-original/md_emoji.png?branch=master)](http://travis-ci.org/mendicant-original/md_emoji)
 
 ## Installation
 
@@ -38,7 +38,7 @@ For a full list of supported emoji, just run `MdEmoji::EMOJI` in your console.
 
 ## Contributing
 
-Features and bugs are tracked through [Github Issues](https://github.com/mendicant-university/md_emoji/issues).
+Features and bugs are tracked through [Github Issues](https://github.com/mendicant-original/md_emoji/issues).
 
 Contributors retain copyright to their work but must agree to release their
 contributions under the same terms as this project. For details, please see the LICENSE file.
