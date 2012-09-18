@@ -100,7 +100,7 @@ module MdEmoji
   smirk_cat smoking snail snake snowboarder snowflake snowman sob soccer soon sos
   sound space_invader spades spaghetti sparkler sparkles speak_no_evil speaker
   speech_balloon speedboat squirrel star star2 stars station statue_of_liberty
-  steam_locomotive stew straight_ruler strawberry stucco sun_with_face sunflower
+  steam_locomotive stew straight_ruler strawberry sun_with_face sunflower
   sunglasses sunny sunrise sunrise_over_mountains surfer sushi suspect
   suspension_railway sweat sweat_drops sweat_smile sweet_potato swimmer symbols
   syringe tada tanabata_tree tangerine taurus taxi tea telephone
@@ -117,6 +117,6 @@ module MdEmoji
   wave wavy_dash waxing_crescent_moon waxing_gibbous_moon wc weary wedding whale
   whale2 wheelchair white_circle white_flower white_square wind_chime wine_glass
   wink wink2 wolf woman womans_clothes womans_hat womens wrench x yellow_heart yen
-  yum zap zero zzz} 
+  yum zap zero zzz}
 
 end
