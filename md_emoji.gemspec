@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.version     = MdEmoji::VERSION
   s.authors     = ["Jordan Byron"]
   s.email       = ["jordan@ducksoupsoftware.com"]
-  s.homepage    = "https://github.com/mendicant-university/md_emoji"
+  s.homepage    = "https://github.com/mendicant-original/md_emoji"
   s.summary     = "Markdown emoji for Rails"
   s.description = "Rails gem which adds emoji parsing to markdown"
 
