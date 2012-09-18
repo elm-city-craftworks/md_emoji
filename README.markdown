@@ -29,10 +29,14 @@ gem 'md_emoji'
 When creating a new markdown renderer, just use `MdEmoji::Render`
 
 ```ruby
-markdown = Redcarpet::Markdown.new(MdEmoji::Render)
+markdown = Redcarpet::Markdown.new(MdEmoji::Render, :no_intra_emphasis => true)
 
 markdown.render("Hello :smile: world!")
 ```
+
+__Please take note__ that due to inconsistencies with the RedCarpet gem,
+`:no_intra_emphasis => true` is required for emoji with multiple underscores:
+`:eight_pointed_black_star:`
 
 Emoji assets will automatically be picked up by the asset pipeline and made
 available to your app at:

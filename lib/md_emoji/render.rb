@@ -1,8 +1,8 @@
 module MdEmoji
   class Render < Redcarpet::Render::HTML
     def initialize(options={})
-      @options = options
-      super options
+      @options = options.merge(:no_intra_emphasis => true)
+      super @options
     end
 
     def paragraph(text)

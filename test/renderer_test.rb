@@ -1,10 +1,11 @@
 require 'test_helper'
 
-class MdEmojiTest < ActiveSupport::TestCase
+class RendererTest < ActiveSupport::TestCase
 
   def setup
     @markdown = Redcarpet::Markdown.new(MdEmoji::Render,
-      :fenced_code_blocks  => true)
+      :fenced_code_blocks  => true,
+      :no_intra_emphasis   => true)
   end
 
   test "adds emoji to text when the emoji exists" do
@@ -20,7 +21,7 @@ class MdEmojiTest < ActiveSupport::TestCase
 
     parsed_text = @markdown.render(text)
 
-    assert_emoji 'plus1', parsed_text
+    assert_emoji '+1', parsed_text
   end
 
   test "works on emoji with underscores" do
@@ -29,6 +30,14 @@ class MdEmojiTest < ActiveSupport::TestCase
     parsed_text = @markdown.render(text)
 
     assert_emoji 'sweat_drops', parsed_text
+  end
+
+  test "extreme underscores" do
+    text = "This is extreme :arrow_double_down:"
+
+    parsed_text = @markdown.render(text)
+
+    assert_emoji 'arrow_double_down', parsed_text
   end
 
   test "works within list items" do
