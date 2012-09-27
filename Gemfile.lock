@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    md_emoji (0.0.8)
+    md_emoji (1.0.0)
       railties (>= 3.1.0)
       redcarpet (>= 2.0)
 
