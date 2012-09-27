@@ -1,7 +1,7 @@
 # :heart: Contributing to Markdown Emoji :heart:
 
 Features and bugs are tracked through
-[Github Issues](https://github.com/mendicant-original/md_emoji/issues).
+[Github Issues](https://github.com/elm-city-craftworks/md_emoji/issues).
 
 Contributors retain copyright to their work but must agree to release their
 contributions under the same terms as this project. For details, please see the
