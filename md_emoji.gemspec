@@ -8,8 +8,8 @@ Gem::Specification.new do |s|
   s.name        = "md_emoji"
   s.version     = MdEmoji::VERSION
   s.authors     = ["Jordan Byron"]
-  s.email       = ["jordan@ducksoupsoftware.com"]
-  s.homepage    = "https://github.com/mendicant-original/md_emoji"
+  s.email       = ["jordan.byron@gmail.com"]
+  s.homepage    = "https://github.com/elm-city-craftworks/md_emoji"
   s.summary     = "Markdown emoji for Rails"
   s.description = "Rails gem which adds emoji parsing to markdown"
 

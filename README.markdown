@@ -3,9 +3,9 @@
 Want to include [emoji](http://www.emoji-cheat-sheet.com/) in your rails app?
 Well now you can!
 
-![:balloon:](/mendicant-original/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
-![:smile:](/mendicant-original/md_emoji/raw/master/vendor/assets/images/emojis/smile.png)
-![:balloon:](/mendicant-original/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
+![:balloon:](/elm-city-craftworks/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
+![:smile:](/elm-city-craftworks/md_emoji/raw/master/vendor/assets/images/emojis/smile.png)
+![:balloon:](/elm-city-craftworks/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
 
 Markdown Emoji was designed to work with the
 [Redcarpet](https://github.com/tanoku/redcarpet) markdown processor and
@@ -14,7 +14,7 @@ Markdown Emoji was designed to work with the
 **Warning** This gem does some scary stuff under the hood, so please check out
 the code, test first, and don't hesitate to ask questions :)
 
-[![Build Status](https://secure.travis-ci.org/mendicant-original/md_emoji.png?branch=master)](http://travis-ci.org/mendicant-original/md_emoji)
+[![Build Status](https://secure.travis-ci.org/elm-city-craftworks/md_emoji.png?branch=master)](http://travis-ci.org/elm-city-craftworks/md_emoji)
 
 ## Installation
 
@@ -47,7 +47,7 @@ For a full list of supported emoji, just run `MdEmoji::EMOJI` in your console.
 
 ## Contributing
 
-See our [CONTRIBUTING.md](/mendicant-original/md_emoji/blob/master/CONTRIBUTING.md)
+See our [CONTRIBUTING.md](/elm-city-craftworks/md_emoji/blob/master/CONTRIBUTING.md)
 document for more details.
 
 ## Authorship
@@ -66,7 +66,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
----
-
-MD Emoji - a [Mendicant University](http://mendicantuniversity.org) project
