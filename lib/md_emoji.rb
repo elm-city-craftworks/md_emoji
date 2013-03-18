@@ -49,7 +49,7 @@ module MdEmoji
   hearts heavy_check_mark heavy_division_sign heavy_dollar_sign heavy_exclamation_mark 
   heavy_minus_sign heavy_multiplication_x heavy_plus_sign helicopter herb hibiscus high_brightness 
   high_heel hocho honey_pot honeybee horse horse_racing hospital hotel hotsprings hourglass 
-  hourglass_flowing_sand house hurtrealbad hushed ice_cream icecream id ideograph_advantage imp 
+  hourglass_flowing_sand house house_with_garden hurtrealbad hushed ice_cream icecream id ideograph_advantage imp 
   inbox_tray incoming_envelope information_desk_person information_source innocent interrobang 
   iphone it izakaya_lantern jack_o_lantern japan japanese_castle japanese_goblin japanese_ogre 
   jeans joy joy_cat jp key keycap_ten kimono kiss kissing kissing_cat kissing_closed_eyes kissing_face 
