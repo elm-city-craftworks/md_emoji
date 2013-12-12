@@ -87,6 +87,15 @@ class RendererTest < ActiveSupport::TestCase
            "<br> not present in parsed text: #{parsed_text}"
   end
 
+  test "works with multiple emoji without spaces" do
+    @markdown = Redcarpet::Markdown.new(MdEmoji::Render.new)
+    text = ":ship::dash:"
+    parsed_text = @markdown.render(text)
+
+    assert_emoji 'ship', parsed_text
+    assert_emoji 'dash', parsed_text
+  end
+
   test "does not render emoji in codeblocks" do
     text = %{```ruby
 def hello
