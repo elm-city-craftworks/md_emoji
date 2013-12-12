@@ -8,7 +8,7 @@ Well now you can!
 ![:balloon:](/elm-city-craftworks/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png)
 
 Markdown Emoji was designed to work with the
-[Redcarpet](https://github.com/tanoku/redcarpet) markdown processor and
+[Redcarpet](https://github.com/vmg/redcarpet) markdown processor and
 [Rails 3.1](https://github.com/rails/rails) with the asset pipeline enabled.
 
 **Warning** This gem does some scary stuff under the hood, so please check out
