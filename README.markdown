@@ -12,7 +12,7 @@ Markdown Emoji was designed to work with the
 [Rails 3.1](https://github.com/rails/rails) with the asset pipeline enabled.
 
 **Warning** This gem does some scary stuff under the hood, so please check out
-the code, test first, and don't hesitate to ask questions :)
+the code, test first, and don't hesitate to ask questions. If you'd like a less insane way to add Emoji to your project, check out the [http-pipeline][http-pipeline] gem.
 
 [![Build Status](https://secure.travis-ci.org/elm-city-craftworks/md_emoji.png?branch=master)](http://travis-ci.org/elm-city-craftworks/md_emoji)
 
@@ -69,3 +69,4 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 [balloon]: https://github.com/elm-city-craftworks/md_emoji/raw/master/vendor/assets/images/emojis/balloon.png
 [smile]: https://github.com/elm-city-craftworks/md_emoji/raw/master/vendor/assets/images/emojis/smile.png
+[http-pipeline]: https://github.com/jch/html-pipeline
