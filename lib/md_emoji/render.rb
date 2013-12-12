@@ -19,7 +19,7 @@ module MdEmoji
     #
     # Valid emoji charaters are listed in +MdEmoji::EMOJI+
     def replace_emoji(text)
-      text.gsub(/:(\S+):/) do |emoji|
+      text.gsub(/:([^\s:])+:/) do |emoji|
 
         emoji_code = emoji #.gsub("|", "_")
         emoji      = emoji_code.gsub(":", "")
